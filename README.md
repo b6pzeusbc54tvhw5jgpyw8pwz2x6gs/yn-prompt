@@ -4,7 +4,7 @@ NodeJS module.
 
 This module is very useful when you want to quest request yes or no as answer in your script like a gulpfile.
 
-Its dependency is the prompt module.
+Its dependency is the [prompt](https://github.com/flatiron/prompt) module.
 
 ##installation
 ```
@@ -13,7 +13,9 @@ npm i yn-prompt
 
 ##api
 ```
-ynPrompt( msg );
+// pattern: regExp
+// default pattern is /^[ynYN]$/
+ynPrompt( msg ); 	
 ynPrompt( msg, pattern );
 ```
 
