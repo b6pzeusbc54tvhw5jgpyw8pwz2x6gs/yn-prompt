@@ -19,7 +19,7 @@ ynPrompt( msg, pattern );
 ##usecase1
 ```javascript
 var ynPrompt = require('yn-prompt');
-ynPrompt("Do you want to copy node_modules directory into the release folder?(y/n)").then( function( yn ) {
+ynPrompt("Do you want to copy node_modules into the release directory?(y/n)").then( function( yn ) {
 
   if( yn.toUpperCase() !== 'Y' ) return;
 
