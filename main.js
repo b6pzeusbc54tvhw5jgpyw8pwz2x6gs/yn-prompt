@@ -4,6 +4,7 @@ var prompt = require('prompt');
 module.exports = function( description, pattern ) {
 
 	var deferred = when.defer();
+	pattern = pattern || /^[ynYN]$/;
 
 	prompt.message = "";
 	prompt.delimiter = "";

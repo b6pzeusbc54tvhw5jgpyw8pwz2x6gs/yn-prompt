@@ -19,15 +19,15 @@ ynPrompt( msg, pattern );
 ##usecase1
 ```javascript
 var ynPrompt = require('yn-prompt');
-ynPrompt("Do you want to copy node_modules directory into the release folder?(y/n)",/^[ynYN]$/).then( function( choice ) {
+ynPrompt("Do you want to copy node_modules directory into the release folder?(y/n)").then( function( yn ) {
 
-  if( choice.toUpperCase() !== 'Y' ) return;
+  if( yn.toUpperCase() !== 'Y' ) return;
 
-  return ynPrompt("Do you want devDependency?(y/n)", /^[ynYN]$/);
+  return ynPrompt("Do you want devDependency?(y/n)");
 
-}).then( function( choice ) {
+}).then( function( yn ) {
 
-  if( choice.toUpperCase() !== 'Y' ) {
+  if( yn.toUpperCase() !== 'Y' ) {
     // todo: copy both devDependencies and dependencies
   } else {
     // todo: copy only dependencies
@@ -47,9 +47,9 @@ gulp.task('question', function( done ) {
 	var result = syncExec('svn status');
 	console.warn( result.stdout );
 
-	ynPrompt('Check the uncommited files. continue? (y/n)', /^[ynYN]$/).then(( choice ) => {
+	ynPrompt('Check the uncommited files. continue? (y/n)').then(( yn ) => {
 
-		if( choice.toUpperCase() === 'Y' ) {
+		if( yn.toUpperCase() === 'Y' ) {
 			goContinue = true;
 		}
 		done();
