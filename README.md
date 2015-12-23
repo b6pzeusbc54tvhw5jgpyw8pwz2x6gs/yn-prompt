@@ -2,7 +2,7 @@
 
 NodeJS module.
 
-When input yes or no, use this yn-prompt module.
+This module is very useful when you want to quest request yes or no as answer in your script like a gulpfile.
 
 Its dependency is the prompt module.
 
