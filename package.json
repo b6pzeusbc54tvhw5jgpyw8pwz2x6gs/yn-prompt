@@ -1,0 +1,9 @@
+{
+  "name": "yn-prompt",
+  "version": "1.0.3",
+  "main": "main.js",
+  "dependencies": {
+    "prompt": "^0.2.14",
+    "when": "^3.7.5"
+  }
+}
