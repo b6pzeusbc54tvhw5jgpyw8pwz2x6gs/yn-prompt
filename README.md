@@ -30,6 +30,8 @@ ynPrompt("Do you want to copy node_modules into the release directory?(y/n)").th
 
 }).then( function( yn ) {
 
+  if( ! yn ) return;
+
   if( yn.toUpperCase() !== 'Y' ) {
     // todo: copy both devDependencies and dependencies
   } else {
