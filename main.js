@@ -5,10 +5,12 @@ module.exports = function( description, pattern ) {
 
 	var deferred = when.defer();
 
+	prompt.message = "";
+	prompt.delimiter = "";
 	prompt.start();
 	prompt.get([{
 		name: 'answer',
-		description: description,
+		description: description.yellow,
 		type: 'string',
 		pattern: pattern,
 		message: 'you must input as ' + pattern,
