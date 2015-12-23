@@ -2,6 +2,14 @@
   "name": "yn-prompt",
   "version": "1.0.3",
   "main": "main.js",
+  "author": {
+    "name": "Alfred UC",
+    "email": "b6pzeusbc54tvhw5jgpyw8pwz2x6gs@gmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/b6pzeusbc54tvhw5jgpyw8pwz2x6gs/yn-prompt.git"
+  },
   "dependencies": {
     "prompt": "^0.2.14",
     "when": "^3.7.5"
