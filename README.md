@@ -13,6 +13,7 @@ npm i yn-prompt
 
 ##api
 ```
+ynPrompt( msg );
 ynPrompt( msg, pattern );
 ```
 
